@@ -1,5 +1,7 @@
 plugins {
-    id("java")
+  kotlin("jvm") version "1.9.20"
+  java
+  application
 }
 
 group = "org.example"
@@ -17,4 +19,12 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+kotlin {
+  jvmToolchain(21)
+}
+
+application {
+  mainClass = "org.example.GenerateExample"
 }

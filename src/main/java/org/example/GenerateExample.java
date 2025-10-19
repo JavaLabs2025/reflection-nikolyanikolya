@@ -1,7 +1,7 @@
 package org.example;
 
 
-import org.example.classes.Example;
+import org.example.classes.*;
 import org.example.generator.Generator;
 
 public class GenerateExample {
