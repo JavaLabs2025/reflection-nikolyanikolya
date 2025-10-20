@@ -3,7 +3,7 @@ package org.example.classes;
 import org.example.Generatable;
 
 @Generatable
-public interface Shape {
-    double getArea();
-    double getPerimeter();
+public enum EnumExample {
+  VALUE1,
+  VALUE2,
 }

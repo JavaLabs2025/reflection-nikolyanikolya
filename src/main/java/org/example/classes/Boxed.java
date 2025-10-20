@@ -1,6 +1,8 @@
 package org.example.classes;
 
-public class Boxed<T> {
+import org.example.Generatable;
+
+public class Boxed<T extends Number> {
   public final T boxedValue;
 
   public Boxed(T value) {
