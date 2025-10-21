@@ -35,6 +35,13 @@ public class GeneratorTest {
   }
 
   @Test
+  public void generateValueOfType_Figure() {
+    var gen = new Generator();
+    Figure generated = gen.generateValueOfType(Figure.class);
+    System.out.println("Generated");
+  }
+
+  @Test
   public void generateValueOfType_SealedShape() {
     var gen = new Generator();
     SealedShape generated = gen.generateValueOfType(SealedShape.class);
