@@ -1,6 +1,9 @@
 package org.example.classes;
 
-public interface Shape {
+import org.example.Generatable;
+
+@Generatable
+public interface Shape extends Figure {
     double getArea();
     double getPerimeter();
 }
